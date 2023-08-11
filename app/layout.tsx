@@ -15,7 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-fit min-h-full">
+    <html
+      suppressHydrationWarning={true}
+      lang="en"
+      className="h-fit min-h-full scroll-smooth"
+    >
       <body className={`${inter.className} h-full w-full flex flex-col`}>
         {children}
       </body>
