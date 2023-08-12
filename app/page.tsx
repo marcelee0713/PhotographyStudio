@@ -48,8 +48,8 @@ export default function Home() {
   return (
     <>
       <main className="flex-1 flex flex-col">
-        <div className="h-screen bg-primary w-full flex gap-20 items-center px-universal py-10 bg-landingPage bg-no-repeat bg-cover">
-          <div className="relative w-landingWidth h-landingHeight group/landingpage">
+        <div className="md:h-fit lg:gap-10 lg:px-semiUniversal lg:py-5 h-screen bg-primary w-full flex gap-20 items-center px-universal py-10 bg-landingPage bg-no-repeat bg-cover">
+          <div className="relative lg:h-semiLandingWidth lg:h-semiLandingHeight w-landingWidth h-landingHeight group/landingpage">
             <RevealOnScroll>
               <Image
                 src={"/LandingPage/landing_pic.jpg"}
@@ -73,12 +73,16 @@ export default function Home() {
           <div className="flex flex-col gap-5 text-accent w-full">
             <RevealOnScroll>
               <h1 className={`${russo.className} text-4xl`}>DreamyStudio</h1>
+            </RevealOnScroll>
+            <RevealOnScroll>
               <p className="text-lg justify-normal">
                 Step into the enchanting world of photography at DreamyStudio
                 where every image captures the essence of dreams turned into
                 reality. With a blend of artistic vision and technical
                 expertise, we transform moments into timeless treasures.{" "}
               </p>
+            </RevealOnScroll>
+            <RevealOnScroll>
               <div className="flex gap-2 font-bold">
                 <a
                   href="#about"
@@ -109,9 +113,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="about" className="h-screen bg-secondary w-full flex flex-col">
+        <div
+          id="about"
+          className="h-screen lg:h-fit bg-secondary w-full flex flex-col"
+        >
           <div className="flex-1 flex gap-10 w-full bg-secondary py-10 px-universal">
-            <div className="relative w-aboutWidth h-aboutHeight">
+            <div className="relative w-aboutWidth h-aboutHeight lg:h-semiAboutHeight lg:w-semiAboutWidth">
               <RevealOnScroll>
                 <Image
                   src={"/About/about1.jpg"}
@@ -153,7 +160,7 @@ export default function Home() {
                 </p>
               </RevealOnScroll>
             </div>
-            <div className="relative w-aboutWidth h-aboutHeight">
+            <div className="relative w-aboutWidth h-aboutHeight lg:h-semiAboutHeight lg:w-semiAboutWidth">
               <RevealOnScroll>
                 <Image
                   src={"/About/about2.jpg"}
@@ -166,7 +173,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 flex gap-10 w-full bg-primary py-10 px-universal">
-            <div className="relative w-aboutWidth h-aboutHeight">
+            <div className="relative w-aboutWidth h-aboutHeight lg:h-semiAboutHeight lg:w-semiAboutWidth">
               <RevealOnScroll>
                 <Image
                   src={"/About/about3.jpg"}
@@ -195,9 +202,9 @@ export default function Home() {
 
         <div
           id="services"
-          className="h-screen bg-primary bg-servicesPage bg-no-repeat bg-cover w-full flex flex-col"
+          className="md:h-fit h-screen bg-primary bg-servicesPage bg-no-repeat bg-cover w-full flex flex-col"
         >
-          <div className="bg-servicesHeader bg-no-repeat bg-cover bg-center w-full h-servicesHeaderHeight shadow-headers shadow-shadowColor">
+          <div className="bg-servicesHeader bg-no-repeat bg-cover bg-center w-full h-servicesHeaderHeight md:h-servicesHeaderSemiHeight shadow-headers shadow-shadowColor">
             <div className="flex flex-col gap-5 text-accent h-full justify-center items-center">
               <RevealOnScroll>
                 <h1 className={`${russo.className} text-4xl`}>Services</h1>
@@ -213,9 +220,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex w-ful h-full px-universal py-10 gap-2 justify-evenly items-center">
+          <div className="flex w-full h-full px-universal py-10 gap-2 justify-evenly items-center">
             <div className="flex flex-col gap-3 items-center">
-              <div className="relative h-servicesHeight w-servicesWidth">
+              <div className="relative h-servicesHeight w-servicesWidth lg:h-semiServicesHeight lg:w-semiServicesWidth">
                 <RevealOnScroll>
                   <Image
                     src={"/ServicesPage/services1.jpg"}
@@ -229,7 +236,7 @@ export default function Home() {
               <div className="font-bold text-secondary">Personal</div>
             </div>
             <div className="flex flex-col gap-3 items-center">
-              <div className="relative h-servicesHeight w-servicesWidth">
+              <div className="relative h-servicesHeight w-servicesWidth lg:h-semiServicesHeight lg:w-semiServicesWidth">
                 <RevealOnScroll>
                   <Image
                     src={"/ServicesPage/services2.jpg"}
@@ -243,7 +250,7 @@ export default function Home() {
               <div className="font-bold text-secondary">Wedding</div>
             </div>
             <div className="flex flex-col gap-3 items-center">
-              <div className="relative h-servicesHeight w-servicesWidth">
+              <div className="relative h-servicesHeight w-servicesWidth lg:h-semiServicesHeight lg:w-semiServicesWidth">
                 <RevealOnScroll>
                   <Image
                     src={"/ServicesPage/services3.jpg"}
@@ -261,9 +268,9 @@ export default function Home() {
 
         <div
           id="gallery"
-          className="h-screen bg-primary bg-galleryPage bg-no-repeat bg-cover w-full flex flex-col"
+          className="md:h-fit h-screen bg-primary bg-galleryPage bg-no-repeat bg-cover w-full flex flex-col"
         >
-          <div className="bg-galleryHeader bg-no-repeat bg-cover bg-center w-full h-servicesHeaderHeight shadow-headers shadow-shadowColor">
+          <div className="bg-galleryHeader bg-no-repeat bg-cover bg-center w-full h-servicesHeaderHeight md:h-servicesHeaderSemiHeight shadow-headers shadow-shadowColor">
             <div className="flex flex-col gap-5 text-accent h-full justify-center items-center">
               <RevealOnScroll>
                 <h1 className={`${russo.className} text-4xl`}>Gallery</h1>
@@ -279,7 +286,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex w-ful h-full px-universal py-10 justify-evenly items-center gap-2">
+          <div className="flex w-full h-full px-universal py-10 justify-evenly items-center gap-2 md:flex-col">
             <div className="relative w-galleryPortWidth h-full">
               <RevealOnScroll>
                 <Image
@@ -290,7 +297,7 @@ export default function Home() {
                 />
               </RevealOnScroll>
             </div>
-            <div className="flex-1 h-full grid grid-cols-2 gap-2">
+            <div className="flex-1 h-full grid grid-cols-2 gap-2 md:h-servicesHeight">
               <div className="relative">
                 <RevealOnScroll>
                   <Image
@@ -366,7 +373,7 @@ export default function Home() {
         </div>
 
         <div id="contact" className="h-screen bg-primary w-full flex flex-col">
-          <div className="flex gap-10 text-accent px-universal py-10">
+          <div className="flex lg:flex-col gap-10 text-accent px-universal py-10">
             <div className="flex flex-col gap-2">
               <RevealOnScroll>
                 <h1 className={`${russo.className} text-4xl`}>Contact us</h1>
@@ -462,7 +469,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-col gap-2 font-bold">
-                <label>Email: </label>
+                <label>Full Name: </label>
                 <div className="flex gap-1">
                   <input
                     type="text"

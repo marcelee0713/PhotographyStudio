@@ -16,16 +16,23 @@ const config: Config = {
       },
       width: {
         landingWidth: "750px",
+        semiLandingWidth: "500px",
         aboutWidth: "370px",
+        semiAboutWidth: "270px",
         servicesHeaderTextWidth: "600px",
         servicesWidth: "300px",
+        semiServicesWidth: "200px",
         galleryPortWidth: "200px",
       },
       height: {
         landingHeight: "685px",
+        semiLandingHeight: "485px",
         aboutHeight: "250px",
+        semiAboutHeight: "200px",
         servicesHeaderHeight: "400px",
+        servicesHeaderSemiHeight: "250px",
         servicesHeight: "400px",
+        semiServicesHeight: "300px",
         galleryLandHeight: "150px",
       },
       backgroundImage: {
@@ -37,6 +44,7 @@ const config: Config = {
       },
       padding: {
         universal: "50px",
+        semiUniversal: "25px",
       },
       boxShadow: {
         leftButtonShadow: "-5px 5px 0px 0px",
@@ -52,6 +60,17 @@ const config: Config = {
         buttons: "15px",
         form: "50px",
       },
+    },
+    screens: {
+      "2xl": { max: "1535px" },
+
+      xl: { max: "1279px" },
+
+      lg: { max: "1024px" },
+
+      md: { max: "700px" },
+
+      sm: { max: "425px" },
     },
   },
   plugins: [],
