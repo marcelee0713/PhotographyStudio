@@ -70,7 +70,7 @@ const config: Config = {
 
       md: { max: "700px" },
 
-      sm: { max: "425px" },
+      sm: { max: "470px" },
     },
   },
   plugins: [],

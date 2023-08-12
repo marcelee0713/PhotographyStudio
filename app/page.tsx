@@ -70,12 +70,16 @@ export default function Home() {
             </RevealOnScroll>
           </div>
 
-          <div className="flex flex-col gap-5 text-accent w-full">
+          <div className="flex flex-col gap-5 md:gap-2 text-accent w-full">
             <RevealOnScroll>
-              <h1 className={`${russo.className} text-4xl`}>DreamyStudio</h1>
+              <h1
+                className={`${russo.className} text-4xl md:text-2xl sm:text-lg sm:text-secondary`}
+              >
+                DreamyStudio
+              </h1>
             </RevealOnScroll>
             <RevealOnScroll>
-              <p className="text-lg justify-normal">
+              <p className="text-lg md:text-base justify-normal sm:text-xs sm:text-secondary">
                 Step into the enchanting world of photography at DreamyStudio
                 where every image captures the essence of dreams turned into
                 reality. With a blend of artistic vision and technical
@@ -83,28 +87,28 @@ export default function Home() {
               </p>
             </RevealOnScroll>
             <RevealOnScroll>
-              <div className="flex gap-2 font-bold">
+              <div className="flex md:grid md:grid-cols-2 gap-2 font-bold md:text-xs sm:grid-cols-1">
                 <a
                   href="#about"
-                  className="flex-1 bg-secondary h-12 p-3 rounded-buttons text-center shadow-buttons shadow-shadowColor cursor-pointer transition-transform hover:-translate-y-1"
+                  className="flex-1 flex items-center justify-center bg-secondary h-12 p-3 rounded-buttons text-center shadow-buttons shadow-shadowColor cursor-pointer transition-transform hover:-translate-y-1"
                 >
                   About
                 </a>
                 <a
                   href="#services"
-                  className="flex-1 bg-secondary h-12 p-3 rounded-buttons text-center shadow-buttons shadow-shadowColor cursor-pointer transition-transform hover:-translate-y-1"
+                  className="flex-1 flex items-center justify-center bg-secondary h-12 p-3 rounded-buttons text-center shadow-buttons shadow-shadowColor cursor-pointer transition-transform hover:-translate-y-1"
                 >
                   Services
                 </a>
                 <a
                   href="#gallery"
-                  className="flex-1 bg-secondary h-12 p-3 rounded-buttons text-center shadow-buttons shadow-shadowColor cursor-pointer transition-transform hover:-translate-y-1"
+                  className="flex-1 flex items-center justify-center bg-secondary h-12 p-3 rounded-buttons text-center shadow-buttons shadow-shadowColor cursor-pointer transition-transform hover:-translate-y-1"
                 >
                   Gallery
                 </a>
                 <a
                   href="#contact"
-                  className="flex-1 bg-secondary h-12 p-3 rounded-buttons text-center shadow-buttons shadow-shadowColor cursor-pointer transition-transform hover:-translate-y-1"
+                  className="flex-1 flex items-center justify-center bg-secondary h-12 p-3 rounded-buttons text-center shadow-buttons shadow-shadowColor cursor-pointer transition-transform hover:-translate-y-1"
                 >
                   Contact
                 </a>
@@ -117,7 +121,7 @@ export default function Home() {
           id="about"
           className="h-screen lg:h-fit bg-secondary w-full flex flex-col"
         >
-          <div className="flex-1 flex gap-10 w-full bg-secondary py-10 px-universal">
+          <div className="flex-1 flex gap-10 w-full bg-secondary py-10 px-universal sm:items-center sm:flex-col">
             <div className="relative w-aboutWidth h-aboutHeight lg:h-semiAboutHeight lg:w-semiAboutWidth">
               <RevealOnScroll>
                 <Image
@@ -132,8 +136,12 @@ export default function Home() {
 
             <div className="flex flex-col gap-5 text-accent w-full justify-center">
               <RevealOnScroll>
-                <h1 className={`${russo.className} text-4xl`}>About Us</h1>
-                <p className="text-lg justify-normal">
+                <h1
+                  className={`${russo.className} text-4xl md:text-2xl sm:text-xl`}
+                >
+                  About Us
+                </h1>
+                <p className="text-lg justify-normal md:text-base sm:text-sm">
                   At DreamyStudio, we are more than just photographers - we are
                   storytellers, memory-makers, and creators of timeless art.
                   Established with a passion for capturing the ethereal beauty
@@ -144,13 +152,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex-1 flex gap-10 w-full bg-primary py-10 px-universal border-b border-secondary">
+          <div className="flex-1 flex gap-10 w-full bg-primary py-10 px-universal border-b border-secondary sm:items-center sm:flex-col">
             <div className="flex flex-col gap-5 text-secondary w-full justify-center">
               <RevealOnScroll>
-                <h1 className={`${russo.className} text-4xl self-end`}>
+                <h1
+                  className={`${russo.className} text-4xl self-end md:text-2xl sm:text-xl`}
+                >
                   Our philosophy
                 </h1>
-                <p className="text-lg text-end">
+                <p className="text-lg text-end md:text-base sm:text-sm sm:text-start">
                   revolves around the belief that each photograph has the power
                   to evoke feelings, transport you to another world, and freeze
                   time in its most exquisite form. Whether it&rsquo;s a tender
@@ -172,7 +182,7 @@ export default function Home() {
               </RevealOnScroll>
             </div>
           </div>
-          <div className="flex-1 flex gap-10 w-full bg-primary py-10 px-universal">
+          <div className="flex-1 flex gap-10 w-full bg-primary py-10 px-universal items-center sm:flex-col">
             <div className="relative w-aboutWidth h-aboutHeight lg:h-semiAboutHeight lg:w-semiAboutWidth">
               <RevealOnScroll>
                 <Image
@@ -186,10 +196,12 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-5 text-secondary w-full justify-center">
               <RevealOnScroll>
-                <h1 className={`${russo.className} text-4xl`}>
+                <h1
+                  className={`${russo.className} text-4xl md:text-2xl sm:text-xl`}
+                >
                   We are not just photographers
                 </h1>
-                <p className="text-lg justify-normal">
+                <p className="text-lg justify-normal md:text-base sm:text-sm">
                   we are dream catchers, capturing the essence of your most
                   cherished moments in a way that leaves you breathless. Join us
                   in our journey of turning dreams into art, one click at a
@@ -204,14 +216,18 @@ export default function Home() {
           id="services"
           className="md:h-fit h-screen bg-primary bg-servicesPage bg-no-repeat bg-cover w-full flex flex-col"
         >
-          <div className="bg-servicesHeader bg-no-repeat bg-cover bg-center w-full h-servicesHeaderHeight md:h-servicesHeaderSemiHeight shadow-headers shadow-shadowColor">
+          <div className="bg-servicesHeader bg-no-repeat bg-cover bg-center w-full h-servicesHeaderHeight md:h-servicesHeaderSemiHeight shadow-headers shadow-shadowColor sm:px-5">
             <div className="flex flex-col gap-5 text-accent h-full justify-center items-center">
               <RevealOnScroll>
-                <h1 className={`${russo.className} text-4xl`}>Services</h1>
+                <h1
+                  className={`${russo.className} text-4xl md:text-2xl sm:text-xl`}
+                >
+                  Services
+                </h1>
               </RevealOnScroll>
 
               <RevealOnScroll>
-                <p className="text-lg text-center w-servicesHeaderTextWidth">
+                <p className="text-lg text-center w-servicesHeaderTextWidth md:text-base md:w-fit sm:text-sm">
                   Indulge in a diverse range of meticulously crafted services,
                   each tailored to weave the magic of storytelling into your
                   cherished moments, creating exquisite and lasting memories.
@@ -220,9 +236,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex w-full h-full px-universal py-10 gap-2 justify-evenly items-center">
+          <div className="flex w-full h-full px-universal py-10 gap-2 justify-evenly items-center md:flex-col md:items-stretch">
             <div className="flex flex-col gap-3 items-center">
-              <div className="relative h-servicesHeight w-servicesWidth lg:h-semiServicesHeight lg:w-semiServicesWidth">
+              <div className="relative h-servicesHeight w-servicesWidth lg:h-semiServicesHeight lg:w-semiServicesWidth md:w-full">
                 <RevealOnScroll>
                   <Image
                     src={"/ServicesPage/services1.jpg"}
@@ -233,10 +249,12 @@ export default function Home() {
                   />
                 </RevealOnScroll>
               </div>
-              <div className="font-bold text-secondary">Personal</div>
+              <div className="font-bold text-secondary sm:text-sm">
+                Personal
+              </div>
             </div>
             <div className="flex flex-col gap-3 items-center">
-              <div className="relative h-servicesHeight w-servicesWidth lg:h-semiServicesHeight lg:w-semiServicesWidth">
+              <div className="relative h-servicesHeight w-servicesWidth lg:h-semiServicesHeight lg:w-semiServicesWidth md:w-full">
                 <RevealOnScroll>
                   <Image
                     src={"/ServicesPage/services2.jpg"}
@@ -247,10 +265,10 @@ export default function Home() {
                   />
                 </RevealOnScroll>
               </div>
-              <div className="font-bold text-secondary">Wedding</div>
+              <div className="font-bold text-secondary sm:text-sm">Wedding</div>
             </div>
             <div className="flex flex-col gap-3 items-center">
-              <div className="relative h-servicesHeight w-servicesWidth lg:h-semiServicesHeight lg:w-semiServicesWidth">
+              <div className="relative h-servicesHeight w-servicesWidth lg:h-semiServicesHeight lg:w-semiServicesWidth md:w-full">
                 <RevealOnScroll>
                   <Image
                     src={"/ServicesPage/services3.jpg"}
@@ -261,22 +279,26 @@ export default function Home() {
                   />
                 </RevealOnScroll>
               </div>
-              <div className="font-bold text-secondary">Commercial</div>
+              <div className="font-bold text-secondary sm:text-sm">
+                Commercial
+              </div>
             </div>
           </div>
         </div>
 
         <div
           id="gallery"
-          className="md:h-fit h-screen bg-primary bg-galleryPage bg-no-repeat bg-cover w-full flex flex-col"
+          className="h-screen md:h-fit bg-primary bg-galleryPage bg-no-repeat bg-cover w-full flex flex-col"
         >
           <div className="bg-galleryHeader bg-no-repeat bg-cover bg-center w-full h-servicesHeaderHeight md:h-servicesHeaderSemiHeight shadow-headers shadow-shadowColor">
             <div className="flex flex-col gap-5 text-accent h-full justify-center items-center">
               <RevealOnScroll>
-                <h1 className={`${russo.className} text-4xl`}>Gallery</h1>
+                <h1 className={`${russo.className} text-4xl md:text-2xl`}>
+                  Gallery
+                </h1>
               </RevealOnScroll>
               <RevealOnScroll>
-                <p className="text-lg text-center w-servicesHeaderTextWidth">
+                <p className="text-lg text-center w-servicesHeaderTextWidth md:text-base md:w-fit">
                   Embark on a visual journey through our meticulously curated
                   gallery, where each photograph is a brushstroke of emotion,
                   capturing the beauty, intimacy, and essence of life&rsquo;s
@@ -286,8 +308,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex w-full h-full px-universal py-10 justify-evenly items-center gap-2 md:flex-col">
-            <div className="relative w-galleryPortWidth h-full">
+          <div className="flex w-full h-full px-universal py-10 justify-evenly items-center gap-2 md:flex-col md:h-screen">
+            <div className="relative w-galleryPortWidth h-full md:w-full">
               <RevealOnScroll>
                 <Image
                   src={"/GalleryPage/galleryport1.jpg"}
@@ -297,8 +319,8 @@ export default function Home() {
                 />
               </RevealOnScroll>
             </div>
-            <div className="flex-1 h-full grid grid-cols-2 gap-2 md:h-servicesHeight">
-              <div className="relative">
+            <div className="flex-1 h-full w-full grid grid-cols-2 gap-2">
+              <div className="relative md:h-galleryLandHeight">
                 <RevealOnScroll>
                   <Image
                     src={"/GalleryPage/gallery1.jpg"}
@@ -308,7 +330,7 @@ export default function Home() {
                   />
                 </RevealOnScroll>
               </div>
-              <div className="relative">
+              <div className="relative md:h-galleryLandHeight">
                 <RevealOnScroll>
                   <Image
                     src={"/GalleryPage/gallery2.jpg"}
@@ -318,7 +340,7 @@ export default function Home() {
                   />
                 </RevealOnScroll>
               </div>
-              <div className="relative">
+              <div className="relative md:h-galleryLandHeight">
                 <RevealOnScroll>
                   <Image
                     src={"/GalleryPage/gallery3.jpg"}
@@ -328,7 +350,7 @@ export default function Home() {
                   />
                 </RevealOnScroll>
               </div>
-              <div className="relative">
+              <div className="relative md:h-galleryLandHeight">
                 <RevealOnScroll>
                   <Image
                     src={"/GalleryPage/gallery4.jpg"}
@@ -338,7 +360,7 @@ export default function Home() {
                   />
                 </RevealOnScroll>
               </div>
-              <div className="relative">
+              <div className="relative md:h-galleryLandHeight">
                 <RevealOnScroll>
                   <Image
                     src={"/GalleryPage/gallery5.jpg"}
@@ -348,7 +370,7 @@ export default function Home() {
                   />
                 </RevealOnScroll>
               </div>
-              <div className="relative">
+              <div className="relative md:h-galleryLandHeight">
                 <RevealOnScroll>
                   <Image
                     src={"/GalleryPage/gallery6.jpg"}
@@ -359,7 +381,7 @@ export default function Home() {
                 </RevealOnScroll>
               </div>
             </div>
-            <div className="relative w-galleryPortWidth h-full">
+            <div className="relative w-galleryPortWidth h-full md:w-full">
               <RevealOnScroll>
                 <Image
                   src={"/GalleryPage/galleryport2.jpg"}
@@ -372,28 +394,33 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="contact" className="h-screen bg-primary w-full flex flex-col">
+        <div
+          id="contact"
+          className="h-screen bg-primary w-full flex flex-col sm:h-full"
+        >
           <div className="flex lg:flex-col gap-10 text-accent px-universal py-10">
             <div className="flex flex-col gap-2">
               <RevealOnScroll>
-                <h1 className={`${russo.className} text-4xl`}>Contact us</h1>
+                <h1 className={`${russo.className} text-4xl md:text-2xl`}>
+                  Contact us
+                </h1>
               </RevealOnScroll>
               <RevealOnScroll>
-                <p className="text-lg justify-normal">
+                <p className="text-lg justify-normal md:text-sm">
                   Stay connected with us to explore the possibilities. Reach out
                   through our contact channels, and let&rsquo;s start crafting
                   your vision into reality.
                 </p>
               </RevealOnScroll>
               <RevealOnScroll>
-                <p className="text-lg justify-normal">
+                <p className="text-lg justify-normal md:text-sm">
                   You should receive a reply immediately confirming your
                   submission. If you don&rsquo;t receive a reply, please check
                   your promotions tab and spam filter.
                 </p>
               </RevealOnScroll>
               <RevealOnScroll>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 md:text-xs">
                   <p>
                     <strong>Email:</strong> info@dreamystudio.com
                   </p>
@@ -412,7 +439,7 @@ export default function Home() {
                 <p className="font-bold">Available appointment: </p>
               </RevealOnScroll>
               <RevealOnScroll>
-                <ul className="text-base">
+                <ul className="text-base md:grid md:grid-cols-2 md:text-xs">
                   <li>
                     <strong>Monday: </strong>9AM - 7PM
                   </li>
@@ -439,7 +466,7 @@ export default function Home() {
             </div>
           </div>
           <form className="flex-1 bg-accent rounded-t-form px-universal py-10 flex flex-col gap-10 h-full">
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid grid-cols-3 gap-5 md:grid-cols-1">
               <div className="flex flex-col gap-2 font-bold">
                 <label>Interested In: </label>
                 <select className="outline-none p-4 rounded-default w-full bg-secondary text-primary font-bold rounded-buttons shadow-buttons shadow-shadowColor">
